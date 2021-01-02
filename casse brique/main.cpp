@@ -1,14 +1,17 @@
 #include <iostream>
 #include "graphics.h"
-#include "constVar.h"
+#include "constvar.h"
 
 using namespace std;
 
 int main()
-{   
-    setcolor( int 16 );
-    void bar(int 0, int 0, int RESOLUTION_X, int 40 ); //mur haut
-    void bar(int 0, int RESOLUTION_Y-40, int 40, int RESOLUTION_Y ); // mur gauche
-    void bar(int RESOLUTION_X-40, int 40, int RESOLUTION_X, int RESOLUTION_Y ); //mur a droite
-    
+{
+     opengraphsize(RESOLUTION_X,RESOLUTION_Y);
+     setcolor (10);
+     bar (0,0,RESOLUTION_X,40); //mur haut
+     bar (0,40,40,RESOLUTION_Y ); // mur gauche
+     bar (RESOLUTION_X-40,40,RESOLUTION_X,RESOLUTION_Y ); //mur a droite
+     getch();
+     closegraph();
+
 }
