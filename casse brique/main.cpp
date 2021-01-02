@@ -1,5 +1,5 @@
 #include <iostream>
-#include "graphics"
+#include "graphics.h"
 #include "constVar.h"
 
 using namespace std;
